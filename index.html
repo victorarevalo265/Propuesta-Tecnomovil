@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Tecnomóvil | Plan de publicaciones y publicidad · Nov–Dic 2026</title>
+<title>Tecnomóvil | Plan de publicaciones y campaña · Nov–Dic 2026</title>
 <style>
 :root{--navy:#0b2a5c;--navy2:#143a7a;--red:#e4482b;--gold:#f5b400;--bg:#f3f5fa;--card:#fff;--ink:#14203a;--mut:#5b6882;--line:#dde3ef;--soft:#eaf0fb;--ok:#1f9d6b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1426;--card:#111f3a;--ink:#eef2fb;--mut:#9fb0cc;--line:#25365a;--soft:#162a4d}}
@@ -38,13 +38,13 @@ h2.sec{font-size:22px;margin:28px 0 4px}.sub{color:var(--mut);font-size:13px;mar
 .month{font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.1em;font-size:13px;margin:22px 0 8px}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .month{color:#9ec0ff}}
 .days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
-.day{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;text-align:left;background:var(--card);border:1px solid var(--line);border-top:5px solid var(--c);border-radius:12px;padding:9px 9px 28px;min-height:150px;color:var(--ink);position:relative;transition:.15s}.day:hover{transform:translateY(-2px);box-shadow:0 8px 22px #0b2a5c26}
+.day{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;text-align:left;background:var(--card);border:1px solid var(--line);border-top:5px solid var(--c);border-radius:12px;padding:9px;min-height:150px;color:var(--ink);position:relative;transition:.15s}.day:hover{transform:translateY(-2px);box-shadow:0 8px 22px #0b2a5c26}
 .day .d{font-size:11px;color:var(--mut);text-transform:capitalize}.day .n{font-size:20px;font-weight:800;line-height:1.1}.day .k{font-size:10px;font-weight:800;color:var(--c);letter-spacing:.04em;margin-top:3px}.day .t{font-size:12.5px;line-height:1.3;font-weight:600;margin-top:2px}.day .s{font-size:11px;color:var(--mut);margin-top:5px;line-height:1.25}
 .day.rest{background:transparent;border-style:dashed;min-height:90px}.day.rest .t{font-weight:400;color:var(--mut)}
 .day.blank{visibility:hidden;pointer-events:none}.day.dim{opacity:.25}
 .day.today{box-shadow:0 0 0 3px var(--red)}
 .day.done:after{content:"✓";position:absolute;right:8px;top:6px;color:var(--ok);font-weight:900;font-size:16px}
-.bdg{position:absolute;left:8px;bottom:7px;display:flex;gap:4px;flex-wrap:wrap}.bdg span{font-size:9.5px;font-weight:800;border-radius:6px;padding:2px 6px}
+.bdg{margin-top:auto;padding-top:7px;display:flex;gap:4px;flex-wrap:wrap}.bdg span{font-size:9.5px;font-weight:800;border-radius:6px;padding:2px 6px}
 .b-star{background:var(--gold);color:#2b2000}.b-act{background:var(--red);color:#fff}.b-end{background:var(--soft);color:var(--mut)}
 .modal{display:none;position:fixed;inset:0;background:#020a1ccc;z-index:20;align-items:center;justify-content:center;padding:14px}.modal.open{display:flex}
 .mb{background:var(--card);color:var(--ink);border-radius:18px;width:min(760px,100%);max-height:92vh;overflow:auto}
@@ -71,6 +71,27 @@ table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;p
 @media(max-width:1000px){.shell{grid-template-columns:minmax(0,1fr)}.side{position:relative;height:auto;padding:12px 14px}.side small{display:none}.nav{display:flex;overflow:auto}.nav button{white-space:nowrap}.kpis,.g4{grid-template-columns:repeat(2,1fr)}.calc,.g3{grid-template-columns:1fr}.tl{grid-template-columns:1fr 1fr}.days{grid-template-columns:repeat(3,minmax(0,1fr))}.day.blank{display:none}}
 @media(max-width:650px){.days{grid-template-columns:repeat(2,minmax(0,1fr))}.g2{grid-template-columns:1fr}.search{width:100%}.vs{grid-template-columns:1fr}.vs .ar{transform:rotate(90deg)}}
 @media print{.side,.tools,.modal{display:none}.shell{display:block}.view{display:block!important}}
+.b-task{background:var(--navy);color:#fff}
+:root[data-theme="dark"] .b-task{background:#2c4f8f}@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .b-task{background:#2c4f8f}}
+.lv3{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:stretch}
+.lv3 .lv{border:1px solid var(--line);border-top:5px solid var(--navy);border-radius:14px;padding:14px;background:var(--card)}
+.lv3 .lv.l2{border-top-color:var(--red)}.lv3 .lv.l3{border-top-color:var(--gold)}
+.lv3 .lv>b{display:block;font-size:16px}.lv3 .lv small{display:block;color:var(--mut);font-size:12px;margin-bottom:6px}.lv3 .lv ul{margin:6px 0 0;padding-left:18px;font-size:13px}.lv3 .lv li{margin:3px 0}
+.lv3 .ar{align-self:center;font-size:26px;color:var(--red);font-weight:800}
+.gstep{margin-top:14px}.gstep>h4{font-size:17px;display:flex;gap:10px;align-items:center}.gstep>h4 .num{background:var(--red);color:#fff;border-radius:99px;min-width:28px;height:28px;display:inline-grid;place-items:center;font-size:14px}
+.gt td:first-child{width:34%;color:var(--mut);font-weight:600}.gt td{font-size:13.5px}
+.cbtn{border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:8px;padding:3px 9px;font-size:12px;margin-left:6px;white-space:nowrap}
+.cbtn:hover{border-color:var(--red)}
+div.val{display:block;margin:4px 0}
+.val{background:var(--soft);border-radius:8px;padding:6px 9px;display:inline-block;margin:2px 0;font-weight:600;white-space:pre-wrap}
+.adc{border:1px solid var(--line);border-left:6px solid var(--red);border-radius:14px;padding:14px;background:var(--card)}
+.adc h4{font-size:16px}.adc .row{margin-top:10px}.adc .row>small{display:block;color:var(--mut);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px}
+.adc .txt{background:var(--soft);border-radius:10px;padding:10px;white-space:pre-wrap;font-size:13px;max-height:260px;overflow:auto}
+.ok{color:var(--ok);font-weight:800}.bad{color:var(--red);font-weight:800}
+.faq details{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card);margin-top:8px}.faq summary{cursor:pointer;font-weight:700}.faq details p,.faq details ol{margin:8px 0 0;font-size:13.5px}
+.task{border:2px solid var(--navy);border-radius:14px;padding:14px;margin-top:8px}.task.hot{border-color:var(--red)}
+@media(max-width:1000px){.lv3{grid-template-columns:1fr}.lv3 .ar{transform:rotate(90deg);justify-self:center}}
+
 </style></head><body>
 <div class="shell">
 <aside class="side"><div class="brand">Tecno<span>móvil</span></div><small>Plan de publicaciones · 24 nov – 31 dic 2026</small><nav class="nav">
@@ -79,9 +100,9 @@ table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;p
 
 <!-- ============ 01 RESUMEN ============ -->
 <section class="view on" id="v1">
-<div class="hero"><div class="eyebrow" style="color:#ffd2c8">Plan 24 nov – 31 dic 2026 · Facebook + Instagram</div><h1>Todo tu material, ordenado día por día.</h1><p>Las 28 publicaciones, los 4 reels y las 10 destacadas ya están hechos. Aquí ves qué subir cada día, qué historia va, a qué hora, el texto listo para copiar y cuáles piezas llevan publicidad pagada (★).</p></div>
+<div class="hero"><div class="eyebrow" style="color:#ffd2c8">Plan 24 nov – 31 dic 2026 · Facebook + Instagram</div><h1>Todo tu material, ordenado día por día.</h1><p>Las 28 publicaciones, los 4 reels y las 10 destacadas ya están hechos. Aquí ves qué subir cada día, qué historia va, a qué hora, el texto listo para copiar y qué tarea de publicidad te toca.</p></div>
 <div class="card todayc" id="hoy"></div>
-<div class="kpis"><div class="card kpi"><b>32</b><small>piezas en el feed: 28 publicaciones + 4 reels</small></div><div class="card kpi"><b>10</b><small>destacadas de Instagram (63 historias)</small></div><div class="card kpi"><b>Q770</b><small>en publicidad ≈ US$100 · 4 anuncios + reserva</small></div><div class="card kpi"><b>Lun–sáb</b><small>una pieza al día · domingo descanso</small></div></div>
+<div class="kpis"><div class="card kpi"><b>32</b><small>piezas en el feed: 28 publicaciones + 4 reels</small></div><div class="card kpi"><b>10</b><small>destacadas de Instagram (63 historias)</small></div><div class="card kpi"><b>Q735</b><small>1 campaña con 6 anuncios · 1 al 21 dic · ≈ US$95</small></div><div class="card kpi"><b>Lun–sáb</b><small>una pieza al día · domingo descanso</small></div></div>
 
 <h2 class="sec">Tu material (ya está listo)</h2><p class="sub">El calendario te dice en qué carpeta está cada cosa.</p>
 <div class="g3">
@@ -92,50 +113,101 @@ table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;p
 
 <h2 class="sec">¿Historias y destacadas son lo mismo?</h2><p class="sub">Casi: una destacada es una historia que guardas en tu perfil.</p>
 <div class="g2"><div class="card"><div class="vs"><div class="box"><b>Historia</b><br><small>Se sube y desaparece a las 24 horas.</small></div><div class="ar">→</div><div class="box"><b>Destacada</b><br><small>Esas mismas historias guardadas en un círculo de tu perfil. No desaparecen.</small></div></div></div>
-<div class="card"><p style="margin:0;font-size:14px">Revisé tus dos carpetas: <b>«Historias» y «Destacadas Instagram» tienen exactamente las mismas imágenes</b>. Usa solo «Historias». Cada día subes un juego como historia y, ese mismo día, en la app de Instagram lo guardas como destacada con su «00 - Portada». Del 24 de noviembre al 4 de diciembre quedan listas las 10.</p><p class="sub" style="margin-top:8px">Facebook no tiene destacadas: allá la historia solo dura 24 horas, y está bien así.</p></div></div>
+<div class="card"><p style="margin:0;font-size:14px">Tus carpetas <b>«Historias» y «Destacadas Instagram» tienen exactamente las mismas imágenes</b>. Usa solo «Historias». Cada día subes un juego como historia y, ese mismo día, en la app de Instagram lo guardas como destacada con su «00 - Portada». Del 24 de noviembre al 4 de diciembre quedan listas las 10.</p><p class="sub" style="margin-top:8px">Facebook no tiene destacadas: allá la historia solo dura 24 horas, y está bien así.</p></div></div>
 
 <h2 class="sec">Ruta de 6 semanas</h2><div class="tl">
-<div><b>24 – 28 nov</b><small>Arranque: publicaciones 01–04, Reel 1 y las primeras 5 destacadas. Publica la 01 hoy y fíjala en tu perfil.</small></div>
-<div><b>30 nov – 5 dic</b><small>Reels 2 y 3 y las destacadas 6 a 10. <b>★ 1 dic: arrancan los anuncios A y B.</b></small></div>
-<div><b>7 – 21 dic</b><small>Publicaciones 09–21. <b>★ 8 dic: anuncio C. 15 dic: anuncio D y la reserva para el ganador.</b></small></div>
-<div><b>22 – 31 dic</b><small>Solo orgánico: Navidad, Reel 4 y cierre de año. Se anotan resultados para el reporte.</small></div></div>
+<div><b>24 – 28 nov</b><small>Publicaciones 01–04, Reel 1 y las primeras 5 destacadas. <b>Preparas la publicidad:</b> WhatsApp conectado, tarjeta lista y WhatsApp Business configurado.</small></div>
+<div><b>30 nov – 5 dic</b><small><b>▶ Lunes 30: creas la campaña</b> (arranca sola el 1 de diciembre). Reels 2 y 3 y las destacadas 6 a 10.</small></div>
+<div><b>7 – 21 dic</b><small>Publicaciones 09–21. <b>Revisiones de la campaña el 8 y el 15.</b> La campaña se apaga sola el 21 a medianoche.</small></div>
+<div><b>22 – 31 dic</b><small>Solo orgánico: Navidad, Reel 4 y cierre de año. El 22 anotas los resultados para el reporte.</small></div></div>
 
 <h2 class="sec">Lo que haces cada día</h2><div class="g4">
 <div class="card step"><b>1 · PUBLICAR</b><h4>La pieza del día</h4><p>En Meta Business Suite, marcando Facebook e Instagram a la vez, a la hora del calendario.</p></div>
 <div class="card step"><b>2 · HISTORIA</b><h4>La historia del día</h4><p>El juego de historias que toca o compartir la publicación del día.</p></div>
 <div class="card step"><b>3 · CONTESTAR</b><h4>Mensajes y comentarios</h4><p>Responder en menos de 1 hora hábil. El primero que contesta suele ganar la cotización.</p></div>
-<div class="card step"><b>4 · ANOTAR</b><h4>En tu Excel</h4><p>Fecha, pieza, mensajes recibidos y cotizaciones enviadas.</p></div></div>
+<div class="card step"><b>4 · ANOTAR</b><h4>En tu Excel</h4><p>Cada persona que escribe: de qué anuncio vino, producto y estado.</p></div></div>
 <div class="note"><b>Antes de publicar:</b> algunas publicaciones tienen una línea «Revisa antes» (un dato, una medida o un permiso de cliente). Confírmalo con la empresa; si no se puede confirmar, quita ese dato del texto.</div>
 </section>
 
+
 <!-- ============ 02 CALENDARIO ============ -->
 <section class="view" id="v2">
-<div class="eyebrow">Ejecución diaria</div><h2 class="sec" style="margin-top:4px">Calendario · 24 nov – 31 dic</h2><p class="sub">Toca un día: ves la carpeta exacta, la hora, el texto listo para copiar, la historia del día y, si lleva ★, todo lo que pide Meta para la publicidad. Tu avance se guarda en este navegador.</p>
+<div class="eyebrow">Ejecución diaria</div><h2 class="sec" style="margin-top:4px">Calendario · 24 nov – 31 dic</h2><p class="sub">Toca un día: ves la tarea de publicidad (si hay), la carpeta exacta, la hora, el texto listo para copiar y la historia del día. Tu avance se guarda en este navegador.</p>
 <div class="card"><div style="display:flex;justify-content:space-between;gap:10px"><b>Avance</b><span id="pt" class="sub" style="margin:0"></span></div><div class="prog" style="margin-top:7px"><i id="pb"></i></div></div>
 <div class="g2" style="margin-top:12px"><div class="card"><b>Mezcla de piezas</b><svg id="mix" viewBox="0 0 320 110"></svg></div><div class="card"><b>Piezas por semana</b><svg id="wk" viewBox="0 0 320 130"></svg></div></div>
-<div class="legend" style="margin-top:12px"><span><i style="background:#0b2a5c"></i>Carrusel</span><span><i style="background:#2f7fd1"></i>Foto</span><span><i style="background:#e4482b"></i>Reel</span><span><span class="bdg" style="position:static;display:inline-flex"><span class="b-star">★ PUBLICIDAD</span></span> lleva publicidad pagada</span><span><span class="bdg" style="position:static;display:inline-flex"><span class="b-act">▶ ACTIVAR</span></span> ese día activas un anuncio</span></div>
+<div class="legend" style="margin-top:12px"><span><i style="background:#0b2a5c"></i>Carrusel</span><span><i style="background:#2f7fd1"></i>Foto</span><span><i style="background:#e4482b"></i>Reel</span><span><span class="bdg" style="position:static;display:inline-flex"><span class="b-star">★ EN CAMPAÑA</span></span> esa pieza también es anuncio</span><span><span class="bdg" style="position:static;display:inline-flex"><span class="b-task">REVISIÓN</span></span> ese día hay una tarea de publicidad</span></div>
 <div class="tools"><div class="chips" id="fl"></div><div class="chips"><button class="btn p" id="gohoy">Abrir el día de hoy</button><input id="q" class="search" placeholder="Buscar tema…"></div></div>
 <div id="cal"></div>
 </section>
 
 <!-- ============ 03 PUBLICIDAD ============ -->
 <section class="view" id="v3">
-<div class="eyebrow">Inversión controlada</div><h2 class="sec" style="margin-top:4px">Publicidad ★ · Q770 ≈ US$100</h2><p class="sub">Tu cuenta de anuncios (Tecnomovilgt) cobra en quetzales, por eso todo va en Q. Objetivo de todos los anuncios: que te escriban por WhatsApp, Messenger o Instagram.</p>
-<div class="note gold" style="margin-top:0"><b>Tenías razón: el dinero va a los videos.</b> Los reels muestran el producto funcionando y detienen el scroll. Se pagan 3 reels y 1 sola imagen (sistema de turnos, porque de ese producto no hay video). Todo lo demás va orgánico, incluidas la 05 y la 10 aunque digan «Anuncio»: con US$100 rinde más concentrar el dinero en pocas piezas.</div>
-<div class="g2" style="margin-top:14px"><div class="card"><b>Reparto del presupuesto</b><svg id="donut" viewBox="0 0 330 180"></svg></div><div class="card"><b>Cuándo corre cada anuncio</b><svg id="gantt" viewBox="0 0 420 215"></svg></div></div>
-<div class="note"><b>¿Por qué empezar el 1 de diciembre y no antes?</b> Del 26 al 30 de noviembre es la temporada de Black Friday y Cyber Monday: todas las tiendas pautan y los anuncios suelen costar más. Esos días los reels corren solo orgánicos y juntan sus primeros likes, que después ayudan al anuncio.</div>
-<h2 class="sec">Fichas para llenar en Meta</h2><p class="sub">Toca una ficha para abrirla. Trae, en orden, lo que Meta te pide al tocar «Promocionar» y qué pones. El día de activar, el calendario te la muestra abierta.</p>
-<div id="fichas"></div>
-<h2 class="sec">Cómo promocionar (2 minutos)</h2><div class="g4">
-<div class="card step"><b>1</b><h4>Abre la pieza</h4><p>Meta Business Suite → Contenido → busca el reel o la publicación ya publicada.</p></div>
-<div class="card step"><b>2</b><h4>Toca «Promocionar»</h4><p>Elige el objetivo «Más mensajes» y las apps donde quieres recibirlos.</p></div>
-<div class="card step"><b>3</b><h4>Llena la ficha</h4><p>Público, presupuesto diario y duración, igual que en la ficha de arriba.</p></div>
-<div class="card step"><b>4</b><h4>Promocionar ahora</h4><p>Meta lo revisa (de minutos a unas horas) y empieza a correr solo. Al terminar se apaga solo.</p></div></div>
-<div class="g2" style="margin-top:14px"><div class="card"><b>Mensaje de bienvenida (igual para todos)</b><div class="copy" id="wm"></div><button class="btn" id="cwm" data-l="Copiar mensaje" style="margin-top:8px">Copiar mensaje</button></div>
-<div class="card"><b>¿Cuál ganó? (lunes 7 de diciembre)</b><ol class="ol"><li>Abre el Administrador de anuncios y mira los anuncios A y B.</li><li>Compara <b>«Costo por conversación iniciada»</b>.</li><li>Gana el más barato, siempre que esos mensajes sean de clientes reales (no solo «hola»).</li><li>El 15 de diciembre vuelves a promocionar el ganador: eso es el anuncio E (reserva).</li></ol></div></div>
-<h2 class="sec">Atender cada mensaje</h2><div class="g4"><div class="card step"><b>1</b><h4>Responder</h4><p>Ideal en menos de 1 hora hábil.</p></div><div class="card step"><b>2</b><h4>Preguntar</h4><p>Qué producto, lugar, medidas o distancia, fecha.</p></div><div class="card step"><b>3</b><h4>Cotizar</h4><p>Enviar ejemplos y propuesta.</p></div><div class="card step"><b>4</b><h4>Seguir</h4><p>Anotar en Excel: fecha, anuncio, producto, estado.</p></div></div>
-<div class="note"><b>Si consigues un poco más (≈ US$30 / Q230):</b> no lo gastes en la última semana de diciembre (la gente está de vacaciones). Úsalo del 5 al 11 de enero en el anuncio ganador, cuando empresas y colegios regresan. Y recuerda: US$100 sirven para probar qué funciona, no garantizan ventas.</div>
+<div class="eyebrow">Publicidad pagada · todo desde Meta Business</div><h2 class="sec" style="margin-top:4px">Tu campaña ★ · Q735 ≈ US$95</h2><p class="sub">Esta pestaña es tu guía completa. Síguela en orden: entender (2 min) → preparar (26–28 nov) → crear (lunes 30 nov) → revisar (8 y 15 dic). Todo se paga con la tarjeta de tu cuenta de anuncios Tecnomovilgt, en quetzales.</p>
+<div class="kpis"><div class="card kpi"><b>1</b><small>campaña: «Mensajes WhatsApp · Dic 2026»</small></div><div class="card kpi"><b>6</b><small>anuncios: 3 reels + 3 imágenes</small></div><div class="card kpi"><b>Q35</b><small>por día, del 1 al 21 de diciembre</small></div><div class="card kpi"><b>Q735</b><small>en total ≈ US$95 · quedan Q35 de margen</small></div></div>
+
+<h2 class="sec">1 · Cómo funciona una campaña</h2><p class="sub">Meta ordena la publicidad en 3 niveles, uno dentro del otro. Tú vas a tener 1 campaña, con 1 conjunto, con 6 anuncios.</p>
+<div class="lv3">
+<div class="lv"><small>NIVEL 1</small><b>Campaña</b><ul><li><b>Qué quieres:</b> que te escriban (mensajes).</li><li><b>Cuánto gastas:</b> Q35 al día.</li><li>Meta reparte ese dinero solo entre tus anuncios.</li></ul></div>
+<div class="ar">→</div>
+<div class="lv l2"><small>NIVEL 2</small><b>Conjunto de anuncios</b><ul><li><b>A quién:</b> toda Guatemala, 25 años o más.</li><li><b>Cuándo:</b> 1 al 21 de diciembre.</li><li><b>Dónde te escriben:</b> WhatsApp 3231 7218.</li></ul></div>
+<div class="ar">→</div>
+<div class="lv l3"><small>NIVEL 3</small><b>Anuncios</b><ul><li><b>Lo que la gente ve:</b> 3 reels y 3 imágenes.</li><li>Meta le enseña cada uno a quien más le interesa y le da más dinero al que mejor funciona.</li></ul></div>
+</div>
+<div class="g2" style="margin-top:14px"><div class="card"><b>¿«Promocionar» o campaña?</b><table style="margin-top:6px"><thead><tr><th></th><th>Botón «Promocionar»</th><th>Campaña</th></tr></thead><tbody>
+<tr><td>Dónde se hace</td><td>En cada publicación</td><td>Administrador de anuncios</td></tr>
+<tr><td>Anuncios</td><td>1 por promoción</td><td>Varios juntos</td></tr>
+<tr><td>El dinero</td><td>Lo divides tú a mano</td><td>Meta lo pasa al que mejor funciona</td></tr>
+<tr><td>Control</td><td>Poco</td><td>Total (por ejemplo, quitar Audience Network)</td></tr>
+<tr><td><b>Para Tecno Móvil</b></td><td class="bad">No lo uses</td><td class="ok">✔ Esto usamos</td></tr></tbody></table></div>
+<div class="card"><b>¿Por qué así? (lo que explica el video, adaptado)</b><ol class="ol"><li><b>Una sola campaña y un solo conjunto con varios anuncios:</b> Meta prueba todos y apuesta por el que trae más mensajes.</li><li><b>Público abierto</b> (sin intereses): Meta encuentra sola a quién le interesa un rótulo y a quién un marcador, según el anuncio.</li><li><b>Sin Audience Network:</b> son apps y juegos de terceros donde casi nunca sale un cliente real.</li><li><b>Objetivo «Interacción → mensajes de WhatsApp»</b> y no «Ventas»: el video vende por internet, pero Tecno Móvil vende por cotización.</li><li><b>Empieza el 1 de diciembre</b>, después de Black Friday, cuando los anuncios suelen costar más.</li></ol></div></div>
+
+<h2 class="sec">2 · Calendario de la publicidad</h2><p class="sub">Cada tarea también aparece en el día correspondiente de la pestaña Calendario.</p>
+<div class="card"><table id="adtl"><thead><tr><th>Fecha</th><th>Tarea</th><th>Tiempo</th></tr></thead><tbody></tbody></table></div>
+<div class="g2" style="margin-top:14px"><div class="card"><b>Cómo se gasta el dinero</b><svg id="spend" viewBox="0 0 420 190"></svg></div>
+<div class="card"><b>Regla de oro</b><p style="margin:6px 0 0;font-size:14px">Del 1 al 7 de diciembre <b>no toques la campaña</b>. Meta está en «fase de aprendizaje»: si cambias el presupuesto, el público o los anuncios, vuelve a empezar y gastas de más. Tu trabajo esos días es <b>contestar rápido cada WhatsApp</b> y anotarlo en el Excel.</p><p class="sub" style="margin-top:10px">Es normal que algunos días gaste un poco más y otros menos. En total nunca pasa de Q35 × 21 días, y además le pondrás un límite de Q800 a la cuenta como seguro.</p></div></div>
+
+<h2 class="sec">3 · Antes de crear la campaña (26 – 28 nov)</h2><p class="sub">Tres tareas cortas. Sin ellas la campaña no funciona bien.</p>
+<div id="prep"></div>
+
+<h2 class="sec">4 · Paso a paso: crear la campaña (lunes 30 nov)</h2><p class="sub">Hazlo en la compu, no en el celular. Ten abiertas esta guía y Meta lado a lado. Tiempo: 30 a 45 minutos la primera vez. Cada valor tiene su botón «Copiar».</p>
+<div id="guia"></div>
+
+<h2 class="sec">5 · Tus 6 anuncios</h2><p class="sub">Lo que pegas en cada anuncio. El «mensaje prellenado» es lo que el cliente ve escrito en WhatsApp al tocar el anuncio: así sabes de qué anuncio vino.</p>
+<div class="g2" id="ads6"></div>
+
+<h2 class="sec">6 · Revisar resultados</h2><div id="review"></div>
+
+<h2 class="sec">7 · Si algo sale mal</h2><div class="faq">
+<details><summary>Mi anuncio dice «Rechazado»</summary><ol><li>En el Administrador de anuncios, pestaña Anuncios, toca el anuncio rechazado: arriba sale el motivo.</li><li>Si crees que es un error, toca <b>«Solicitar revisión»</b>. Meta responde en 1 o 2 días.</li><li>Los otros anuncios siguen corriendo; la campaña no se detiene.</li><li>Si no entiendes el motivo, mándame una captura y te digo qué cambiar.</li></ol></details>
+<details><summary>Lleva más de 24 horas «En revisión»</summary><p>Es normal que tarde con cuentas nuevas en publicidad. Por eso la creas el 30 y empieza el 1. Si pasan 48 horas, entra a business.facebook.com → Ayuda → Soporte y abre un caso.</p></details>
+<details><summary>La campaña está activa pero no gasta (0 impresiones)</summary><ol><li>Revisa que los tres interruptores estén encendidos (azul): campaña, conjunto y anuncios.</li><li>Revisa «Facturación y pagos»: si hay un aviso rojo, el pago falló (ver siguiente punto).</li><li>Revisa que la fecha de inicio sea 1 de diciembre de 2026 y no otro año.</li></ol></details>
+<details><summary>El pago fue rechazado</summary><p>Casi siempre es el banco: Meta cobra desde el extranjero (Irlanda) y muchos bancos de Guatemala bloquean esos cargos. Llama al banco y pide habilitar <b>compras por internet e internacionales</b>. Luego, en «Facturación y pagos», toca «Pagar ahora» o vuelve a intentar.</p></details>
+<details><summary>No me aparece WhatsApp en «Apps de mensajes»</summary><p>El número todavía no está conectado a la página (tarea del 26 de noviembre). Mientras lo conectas, marca <b>Messenger</b> e <b>Instagram</b>: los mensajes te llegan a la bandeja de Meta Business Suite. Cuando conectes WhatsApp, edita el conjunto y márcalo.</p></details>
+<details><summary>Me sale «Público Advantage+» y no encuentro dónde poner la edad 25–60</summary><p>Es normal, Meta lo pone por defecto. En «Controles de público» deja <b>Ubicación: Guatemala</b> y <b>Edad mínima: 25</b>. Si te deja agregar una sugerencia de edad, pon 25 a 60. No agregues intereses.</p></details>
+<details><summary>No me deja cambiar a «Ubicaciones manuales»</summary><p>Déjalo en «Ubicaciones Advantage+». No pasa nada grave: Meta casi no le da dinero a Audience Network cuando el objetivo es mensajes.</p></details>
+<details><summary>Me pide verificar mi identidad o el negocio</summary><p>Sigue los pasos que te da Meta (foto de DPI o documentos de la empresa). Puede tardar 1 o 2 días; por eso es bueno crear la campaña antes del 1. No mandes esos documentos por ningún otro lado: solo dentro de business.facebook.com.</p></details>
+<details><summary>Me llegan mensajes de otros países o de spam</summary><p>Pasa un poco. No los contestes ni los cuentes en el Excel. Si son muchos (más de la mitad), dime y lo ajustamos.</p></details>
+<details><summary>Ya está corriendo y me equivoqué en un texto</summary><p>No edites el anuncio que ya funciona: reinicia su aprendizaje. Si el error es grave (precio, teléfono), apágalo, duplícalo, corrige la copia y publícala.</p></details>
+</div>
+
+<h2 class="sec">8 · Atender cada mensaje</h2><div class="g4"><div class="card step"><b>1</b><h4>Responder</h4><p>En menos de 1 hora hábil. Escribe «/datos» para mandar la lista de lo que necesitas.</p></div><div class="card step"><b>2</b><h4>Preguntar</h4><p>Producto, medidas o distancia, interior o exterior, colores, lugar.</p></div><div class="card step"><b>3</b><h4>Cotizar</h4><p>Enviar ejemplos y la cotización. Ponle la etiqueta «Cotizado».</p></div><div class="card step"><b>4</b><h4>Seguir</h4><p>A los 2 o 3 días, si no responde, un mensaje corto. Etiqueta «Seguimiento».</p></div></div>
+<div class="card" style="margin-top:14px;overflow-x:auto"><b>Columnas para tu Excel de prospectos</b><table style="margin-top:6px"><thead><tr><th>Fecha</th><th>Nombre</th><th>Teléfono</th><th>Anuncio</th><th>Producto</th><th>Lugar</th><th>Estado</th><th>Monto cotizado</th><th>Notas</th></tr></thead><tbody><tr><td>01/12</td><td>Juan Pérez</td><td>5555 5555</td><td>01 · Reel Rótulo</td><td>Rótulo de precios</td><td>Escuintla</td><td>Cotizado</td><td>Q—</td><td>Quiere 3 precios</td></tr></tbody></table><p class="sub" style="margin:8px 0 0">«Anuncio» lo sabes por el mensaje prellenado con el que te escribe. Estado: Nuevo · Cotizado · Seguimiento · Ganado · Perdido. (La fila es solo un ejemplo.)</p></div>
+
+<h2 class="sec">9 · Palabras que vas a ver en Meta</h2><div class="card"><table><tbody>
+<tr><td><b>Administrador de anuncios</b></td><td>La herramienta de Meta Business donde se crean y se miden las campañas.</td></tr>
+<tr><td><b>Presupuesto de la campaña Advantage</b></td><td>Pones el dinero en la campaña y Meta lo reparte solo entre los anuncios.</td></tr>
+<tr><td><b>Fase de aprendizaje</b></td><td>Los primeros días Meta prueba a quién mostrar cada anuncio. No toques nada mientras tanto.</td></tr>
+<tr><td><b>Resultados</b></td><td>En esta campaña, «Conversaciones de mensajes iniciadas»: personas que te escribieron.</td></tr>
+<tr><td><b>Costo por resultado</b></td><td>Cuánto te costó cada conversación. Es el número más importante.</td></tr>
+<tr><td><b>Importe gastado</b></td><td>Lo que ya se gastó.</td></tr>
+<tr><td><b>Alcance / Impresiones</b></td><td>Personas distintas que vieron el anuncio / veces que se mostró.</td></tr>
+<tr><td><b>Frecuencia</b></td><td>Cuántas veces en promedio lo vio cada persona. Si pasa de 4, la gente se cansa.</td></tr>
+<tr><td><b>Audience Network</b></td><td>Apps y juegos de terceros. Lo quitamos.</td></tr>
+<tr><td><b>Mensaje prellenado</b></td><td>Texto que aparece escrito en el WhatsApp del cliente al tocar el anuncio.</td></tr>
+</tbody></table></div>
+<div class="note"><b>Si consigues un poco más (≈ US$30 / Q230):</b> no lo gastes en la última semana de diciembre (la gente está de vacaciones). Úsalo del 5 al 11 de enero con los anuncios que mejor funcionaron, cuando empresas y colegios regresan. Y recuerda: esta campaña sirve para probar qué funciona; no garantiza ventas.</div>
 </section>
+
 
 <!-- ============ 04 IMPACTO ============ -->
 <section class="view" id="v4">
@@ -145,8 +217,8 @@ table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;p
 <div class="fun" id="fun"></div><div class="legend"><span id="roi"></span></div></div></div>
 <div class="g2" style="margin-top:14px"><div class="card"><b>Seguidores de Facebook en 6 meses</b><p class="sub">Hoy: 1,300</p><svg id="ln" viewBox="0 0 420 240"></svg><div class="legend"><span><i style="background:#8aa4d6"></i>Sin plan (1%/mes)</span><span><i style="background:#0b2a5c"></i>Solo contenido (4%)</span><span><i style="background:#e4482b"></i>Contenido + pauta</span></div></div>
 <div class="card"><b>Alcance mensual estimado</b><p class="sub">Personas distintas que ven publicaciones</p><svg id="rc" viewBox="0 0 420 240"></svg><div class="legend"><span>Hoy: lo que muestre Insights. Referencia ilustrativa.</span></div></div></div>
-<div class="g2" style="margin-top:14px"><div class="card"><b>Antes vs. con el plan</b><table><thead><tr><th></th><th>Antes</th><th>Con el plan</th></tr></thead><tbody><tr><td>Publicaciones</td><td>Irregular</td><td>1 al día (lun–sáb) + historias</td></tr><tr><td>Instagram</td><td>Cuenta nueva, vacía</td><td>32 piezas y 10 destacadas</td></tr><tr><td>Videos</td><td>Ninguno</td><td>4 reels con narración</td></tr><tr><td>Captación</td><td>Orgánica</td><td>Orgánica + anuncios de mensajes</td></tr><tr><td>Seguimiento</td><td>Sin registro</td><td>Registro de prospectos en Excel</td></tr></tbody></table></div>
-<div class="card"><b>Qué medir cada semana</b><table><tbody><tr><td>Alcance y visitas</td><td>Insights</td></tr><tr><td>Mensajes recibidos</td><td>Inbox / WhatsApp</td></tr><tr><td>Costo por conversación</td><td>Administrador de anuncios</td></tr><tr><td>Cotizaciones enviadas</td><td>Excel</td></tr><tr><td>Ventas por redes</td><td>Excel</td></tr></tbody></table></div></div>
+<div class="g2" style="margin-top:14px"><div class="card"><b>Antes vs. con el plan</b><table><thead><tr><th></th><th>Antes</th><th>Con el plan</th></tr></thead><tbody><tr><td>Publicaciones</td><td>Irregular</td><td>1 al día (lun–sáb) + historias</td></tr><tr><td>Instagram</td><td>Cuenta nueva, vacía</td><td>32 piezas y 10 destacadas</td></tr><tr><td>Videos</td><td>Ninguno</td><td>4 reels con narración</td></tr><tr><td>Captación</td><td>Orgánica</td><td>Orgánica + 1 campaña de mensajes a WhatsApp</td></tr><tr><td>Seguimiento</td><td>Sin registro</td><td>Registro de prospectos en Excel</td></tr></tbody></table></div>
+<div class="card"><b>Qué medir cada semana</b><table><tbody><tr><td>Alcance y visitas</td><td>Insights</td></tr><tr><td>Mensajes recibidos</td><td>Inbox / WhatsApp</td></tr><tr><td>Costo por conversación</td><td>Administrador de anuncios</td></tr><tr><td>De qué anuncio vino cada mensaje</td><td>Mensaje prellenado → Excel</td></tr><tr><td>Cotizaciones enviadas</td><td>Excel</td></tr><tr><td>Ventas por redes</td><td>Excel</td></tr></tbody></table></div></div>
 <div class="note">El crecimiento real depende de precio, capacidad de producción y rapidez de respuesta. Medir a los 30 y 60 días antes de prometer cifras.</div>
 </section>
 
@@ -208,7 +280,7 @@ Diseñamos, instalamos y damos mantenimiento en Guatemala, y también hemos llev
 Cotiza el rótulo de tu estación: ${TEL}
 
 #Gasolineras #RotulosDePrecios #RotulosLED #TecnoMovil #Guatemala`},
-5:{t:"Anuncio – Gasolineras",n:1,hl:"Gasolineras",rev:"Esta imagen es tipo anuncio, pero NO la pagues: el dinero va a los reels. Confirma los tamaños de 25, 30 y 40 cm.",cap:`¿Tus clientes pueden ver tus precios desde la carretera, incluso de noche? ⛽
+5:{t:"Anuncio – Gasolineras",n:1,hl:"Gasolineras",rev:"Confirma los tamaños de 25, 30 y 40 cm (también salen en el anuncio 04 de la campaña).",cap:`¿Tus clientes pueden ver tus precios desde la carretera, incluso de noche? ⛽
 
 Un rótulo de precios LED le da a tu estación una imagen moderna y hace que tus precios se lean desde lejos. Lo fabricamos e instalamos en Guatemala, con dígitos de 25, 30 y 40 cm, y te damos mantenimiento cuando lo necesites.
 
@@ -250,7 +322,7 @@ Desde entonces hemos seguido creciendo junto a las estaciones de servicio de Gua
 ${TEL}
 
 #Trayectoria #Gasolineras #RotulosDePrecios #TecnoMovil #Guatemala`},
-10:{t:"Anuncio – Marcadores deportivos",n:1,hl:"Marcadores",rev:"Imagen tipo anuncio, pero hoy NO se paga: el dinero de marcadores va a los reels.",cap:`Dale a tu cancha el marcador que se merece. 🏀
+10:{t:"Anuncio – Marcadores deportivos",n:1,hl:"Marcadores",rev:"Esta misma imagen ya corre como anuncio 05 desde el 1 de diciembre; en el feed solo publícala normal.",cap:`Dale a tu cancha el marcador que se merece. 🏀
 
 Marcadores LED para básquetbol, fútbol, futsal, béisbol y softbol, con control remoto inalámbrico, fabricados e instalados en Guatemala. Te ayudamos a elegir el tamaño y el modelo ideal para tu espacio.
 
@@ -287,7 +359,7 @@ Gracias por confiar en Tecno Móvil.
 ${TEL}
 
 #SistemaDeTurnos #AtencionAlCliente #Proyectos #TecnoMovil #Guatemala`},
-15:{t:"Anuncio – Sistema de turnos",n:1,hl:"Turnos",ad:"D",cap:`Menos filas, más orden y clientes más satisfechos. ✅
+15:{t:"Anuncio – Sistema de turnos",n:1,hl:"Turnos",cap:`Menos filas, más orden y clientes más satisfechos. ✅
 
 Con un sistema de turnos LED tus clientes esperan con comodidad y pasan a la ventanilla correcta. Incluye números LED por ventanilla, un panel para llamar al siguiente turno e instalación en tu oficina.
 
@@ -424,17 +496,100 @@ ${TEL}
 };
 const STO={1:["Cotiza",4,"01 - Cotiza"],2:["Nosotros",6,"02 - Nosotros"],3:["Marcadores",8,"03 - Marcadores"],4:["Gasolineras",8,"04 - Gasolineras"],5:["Pantallas",7,"05 - Pantallas"],6:["Relojes",7,"06 - Relojes"],7:["Turnos",6,"07 - Turnos"],8:["Seguridad",5,"08 - Seguridad"],9:["Semáforos",6,"09 - Semaforos"],10:["Proyectos",6,"10 - Proyectos"]};
 
-/* ---------- PUBLICIDAD ---------- */
-const ADS={
-A:{n:"Anuncio A",piece:"Reel 1 · Rótulo Chuju Gas km 182",src:"r1",from:"2026-12-01",to:"2026-12-07",when:"martes 1 al lunes 7 de diciembre",daily:25,days:7,c:"#e4482b",why:"Los rótulos de gasolinera son lo que más vende, y el video muestra uno real visto desde la carretera.",aud:{name:"Gasolineras GT",age:"25 a 60",int:"gasolinera · estación de servicio · combustible · transporte · pequeña empresa"},faq:["Quiero cotizar un rótulo de precios","¿Qué tamaños de dígitos tienen?","¿Instalan en mi departamento?"]},
-B:{n:"Anuncio B",piece:"Reel 2 · Marcador La Laguna",src:"r2",from:"2026-12-01",to:"2026-12-07",when:"martes 1 al lunes 7 de diciembre",daily:25,days:7,c:"#0b2a5c",why:"Marcadores son la otra línea fuerte. Este video abre con una pregunta que engancha y dura solo 30 segundos.",aud:{name:"Canchas y ligas GT",age:"25 a 55",int:"fútbol · fútbol sala (futsal) · cancha sintética · baloncesto · liga deportiva"},faq:["Quiero cotizar un marcador","¿Para qué deportes sirve?","¿Cómo se controla?"]},
-C:{n:"Anuncio C",piece:"Reel 3 · Marcador TEC C1 (Colegio Intelego)",src:"r3",from:"2026-12-08",to:"2026-12-14",when:"martes 8 al lunes 14 de diciembre",daily:20,days:7,c:"#2f7fd1",why:"Les habla directo a los colegios, que en diciembre preparan el ciclo 2027, con datos concretos: 30 cm, 199 puntos, multideporte.",aud:{name:"Colegios GT",age:"28 a 60",int:"educación · escuela privada · educación física · baloncesto · voleibol"},faq:["Quiero cotizar un marcador para mi colegio","¿Sirve para varios deportes?","¿Incluye instalación?"]},
-D:{n:"Anuncio D",piece:"Publicación 15 · Anuncio – Sistema de turnos",src:"p15",from:"2026-12-15",to:"2026-12-21",when:"martes 15 al lunes 21 de diciembre",daily:15,days:7,c:"#8a5cd6",why:"No hay video de turnos, pero esta imagen ya está diseñada como anuncio y abre otro mercado: cooperativas, bancos y clínicas.",aud:{name:"Atención al público GT",age:"28 a 60",int:"cooperativa de ahorro y crédito · banca · clínica · hospital · atención al cliente"},faq:["Quiero cotizar un sistema de turnos","¿Cuántas ventanillas puede tener?","¿Incluye instalación?"]},
-E:{n:"Anuncio E · Reserva",piece:"El ganador entre el Anuncio A y el B",src:null,from:"2026-12-15",to:"2026-12-21",when:"martes 15 al lunes 21 de diciembre",daily:25,days:7,c:"#f5b400",why:"El dinero de reserva va donde ya funcionó: el anuncio con el costo por conversación más bajo del 1 al 7 de diciembre.",aud:null,faq:null}
-};
-const WELCOME='¡Hola! Gracias por escribir a Tecno Móvil. Cuéntanos qué producto te interesa y en qué lugar lo instalarías, y te preparamos tu cotización.';
+const pad=n=>String(n).padStart(2,'0');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+/* ---------- CAMPAÑA ---------- */
+const CAMP={name:'Tecno Móvil · Mensajes WhatsApp · Dic 2026',adset:'Guatemala 25+ · abierto',daily:35,from:'2026-12-01',to:'2026-12-21',days:21};
+const strip=c=>c.split('\n\n#')[0];
+const ADS6=[
+{n:1,name:'01 · Reel Rótulo Chuju Gas',kind:'video',src:{k:'R',id:1},path:'Documentos › Reels con Claude › Reels › 2026-11-18 · Rótulo Chuju Gas km 182 › FINAL - Rótulo Chuju Gas km 182.mp4',title:'Cotiza el rótulo de tu estación',pre:'Hola, vi el video del rótulo de precios y quiero cotizar uno para mi estación.',c:'#e4482b'},
+{n:2,name:'02 · Reel Marcador La Laguna',kind:'video',src:{k:'R',id:2},path:'Documentos › Reels con Claude › Reels › 2026-11-18 · Marcador La Laguna › FINAL - Marcador La Laguna.mp4',title:'Marcadores LED para tu cancha',pre:'Hola, vi el video del marcador de la cancha y quiero cotizar uno.',c:'#0b2a5c'},
+{n:3,name:'03 · Reel Marcador Colegio Intelego',kind:'video',src:{k:'R',id:3},path:'Documentos › Reels con Claude › Reels › 2026-11-18 · Marcador TEC C1 Intelego › FINAL - Marcador TEC C1 Intelego.mp4',title:'Marcador multideporte para tu colegio',pre:'Hola, vi el video del marcador del colegio y quiero cotizar uno.',c:'#2f7fd1'},
+{n:4,name:'04 · Imagen Gasolineras',kind:'imagen',src:{k:'P',id:5},path:'Descargas › Tecnomovil › Publicaciones › Publicación 05 - Anuncio – Gasolineras › Imagen 1.jpg',title:'Rótulos de precios LED',pre:'Hola, vi su anuncio de rótulos de precios y quiero cotizar.',c:'#e4482b'},
+{n:5,name:'05 · Imagen Marcadores',kind:'imagen',src:{k:'P',id:10},path:'Descargas › Tecnomovil › Publicaciones › Publicación 10 - Anuncio – Marcadores deportivos › Imagen 1.jpg',title:'Cotiza tu marcador deportivo',pre:'Hola, vi su anuncio de marcadores deportivos y quiero cotizar.',c:'#0b2a5c'},
+{n:6,name:'06 · Imagen Sistema de turnos',kind:'imagen',src:{k:'P',id:15},path:'Descargas › Tecnomovil › Publicaciones › Publicación 15 - Anuncio – Sistema de turnos › Imagen 1.jpg',title:'Sistema de turnos LED',pre:'Hola, vi su anuncio del sistema de turnos y quiero cotizar.',c:'#8a5cd6'}
+];
+ADS6.forEach(a=>{const o=a.src.k==='R'?REEL[a.src.id]:PUB[a.src.id];a.text=strip(o.cap)});
+const inCamp=(k,id)=>ADS6.find(a=>a.src.k===k&&a.src.id===id);
+const GREET='¡Hola! Gracias por escribir a Tecno Móvil. Cuéntanos qué producto te interesa y en qué lugar lo instalarías, y te preparamos tu cotización.';
+const WA_W='¡Hola! Gracias por escribir a Tecno Móvil. Cuéntanos qué producto te interesa y en qué lugar lo instalarías. Si puedes, mándanos una foto del espacio. Te respondemos en breve con tu cotización.';
+const WA_A='¡Gracias por escribir a Tecno Móvil! En este momento estamos fuera de horario (lunes a viernes de 8:00 a 17:00). Te respondemos en cuanto regresemos.';
+const WA_D='Para prepararte la cotización necesitamos:\n1. Qué producto buscas\n2. Medidas o distancia desde donde se debe leer\n3. Interior o exterior\n4. Colores y cantidad\n5. Departamento o ciudad de instalación';
+const COPY={camp:CAMP.name,adset:CAMP.adset,greet:GREET,wa_w:WA_W,wa_a:WA_A,wa_d:WA_D,q35:'35',gt:'Guatemala',age:'25'};
+ADS6.forEach(a=>{COPY['n'+a.n]=a.name;COPY['t'+a.n]=a.text;COPY['h'+a.n]=a.title;COPY['p'+a.n]=a.pre});
+const cb=(k,l='Copiar')=>`<button class="cbtn" data-copy="${k}" data-l="${l}">${l}</button>`;
 
-/* ---------- CALENDARIO (fecha, tipo, id, historia, hora, extras) ---------- */
+/* ---------- textos de guía (se usan en la pestaña 03 y en el calendario) ---------- */
+const PREP=[
+{d:'2026-11-26',b:'PREPARAR 1',t:'Conecta WhatsApp Business a la página',min:'15 min',h:`<ol class="ol"><li>En el celular que tiene el <b>3231 7218</b>, abre <b>WhatsApp Business</b>. Si ese número usa WhatsApp normal, instala WhatsApp Business y pásalo ahí: los chats se conservan. Pídele permiso a quien usa ese teléfono.</li><li>Toca <b>Herramientas</b> (en Android: ⋮ → Herramientas para la empresa) → <b>Facebook e Instagram</b> → <b>Facebook</b>.</li><li>Inicia sesión con tu Facebook y elige la página <b>Tecnomovilgt</b>. Confirma.</li><li><b>Otra forma, desde la compu:</b> entra a la página Tecnomovilgt → <b>Configuración</b> → <b>Cuentas vinculadas</b> → <b>WhatsApp</b> → Conectar → escribe el número → pon el código que llega por WhatsApp.</li><li><b>Listo</b> cuando en «Cuentas vinculadas» aparezca el número como conectado.</li></ol><p class="sub">Si no logras conectarlo antes del 30, la campaña igual se crea con Messenger e Instagram (ver «Si algo sale mal»).</p>`},
+{d:'2026-11-27',b:'PREPARAR 2',t:'Revisa el pago y pon un límite de gasto',min:'10 min',h:`<ol class="ol"><li>En la compu entra a <b>business.facebook.com</b> → menú ☰ → <b>Facturación y pagos</b>.</li><li>Arriba elige la cuenta publicitaria <b>Tecnomovilgt</b>. Revisa que la tarjeta aparezca como <b>predeterminada</b> y sin avisos rojos.</li><li>Llama a tu banco (o entra a su app) y habilita en esa tarjeta las <b>compras por internet e internacionales</b>: Meta cobra desde el extranjero y algunos bancos de Guatemala bloquean el cargo.</li><li>En <b>Configuración de pagos</b> → <b>Límite de gasto de la cuenta</b> → pon <b>Q800</b>. Es tu seguro: Meta nunca podrá gastar más que eso.</li><li>Cómo cobra Meta: solo, cada vez que el gasto llega a cierto monto o a fin de mes. Los recibos quedan en esa misma pantalla.</li></ol>`},
+{d:'2026-11-28',b:'PREPARAR 3',t:'Configura WhatsApp Business y ten listos los archivos',min:'20 min',h:`<ol class="ol"><li>WhatsApp Business → Herramientas → <b>Mensaje de bienvenida</b> → actívalo y pega: <div class="val">${esc(WA_W)}</div>${cb('wa_w')}</li><li>Herramientas → <b>Mensaje de ausencia</b> → «Fuera del horario comercial» → pega (cambia el horario por el real): <div class="val">${esc(WA_A)}</div>${cb('wa_a')}</li><li>Herramientas → <b>Respuestas rápidas</b> → nueva → atajo <b>/datos</b> → pega: <div class="val">${esc(WA_D)}</div>${cb('wa_d')}<br><small>En un chat escribes /datos y se pega solo.</small></li><li>Herramientas → <b>Etiquetas</b>: crea <b>Nuevo, Cotizado, Seguimiento, Ganado, Perdido</b>.</li><li>En la compu, revisa que encuentras los 6 archivos de los anuncios (lista en «Tus 6 anuncios», pestaña 03).</li></ol>`}
+];
+function guideHTML(){
+ const row=(a,b)=>`<tr><td>${a}</td><td>${b}</td></tr>`;
+ return `<div class="card gstep"><h4><span class="num">1</span>Entrar al Administrador de anuncios</h4><ol class="ol"><li>En la compu entra a <b>business.facebook.com</b> → menú ☰ → <b>Administrador de anuncios</b> (o directo: adsmanager.facebook.com).</li><li>Arriba a la izquierda revisa que la cuenta sea <b>Tecnomovilgt</b>.</li><li>En la pestaña <b>Campañas</b>, toca el botón verde <b>+ Crear</b>.</li></ol></div>
+ <div class="card gstep"><h4><span class="num">2</span>Nivel campaña</h4><table class="gt"><tbody>
+ ${row('Objetivo de la campaña','<b>Interacción</b> → Continuar')}
+ ${row('Si pregunta el tipo de configuración','<b>Configuración manual</b>')}
+ ${row('Nombre de la campaña',`<span class="val">${CAMP.name}</span>${cb('camp')}`)}
+ ${row('Categorías especiales de anuncios','No marques nada')}
+ ${row('Tipo de compra','Subasta (ya viene así)')}
+ ${row('Prueba A/B','Apagada')}
+ ${row('Presupuesto','Activa <b>«Presupuesto de la campaña Advantage»</b> → <b>Presupuesto diario</b> → <span class="val">Q35</span>'+cb('q35'))}
+ ${row('Estrategia de puja','«Volumen más alto» (ya viene así)')}
+ ${row('Al terminar','Botón <b>Siguiente</b>')}
+ </tbody></table></div>
+ <div class="card gstep"><h4><span class="num">3</span>Nivel conjunto de anuncios</h4><table class="gt"><tbody>
+ ${row('Nombre del conjunto',`<span class="val">${CAMP.adset}</span>${cb('adset')}`)}
+ ${row('Ubicación de la conversión','<b>Apps de mensajes</b>')}
+ ${row('Apps de mensajes','Marca solo <b>WhatsApp</b>. Si no aparece, marca Messenger e Instagram.')}
+ ${row('Meta de rendimiento','<b>Maximizar el número de conversaciones</b>')}
+ ${row('Página de Facebook','<b>Tecnomovilgt</b>')}
+ ${row('Número de WhatsApp','<b>3231 7218</b>')}
+ ${row('Contenido dinámico','Apagado')}
+ ${row('Calendario','Inicio: <b>1 dic 2026, 00:00</b> · Finalización: <b>21 dic 2026, 23:59</b> (activa «Establecer fecha de finalización»)')}
+ ${row('Público · controles','Ubicación: <span class="val">Guatemala</span>'+cb('gt')+' (borra cualquier otro país) · Edad mínima: <span class="val">25</span>'+cb('age'))}
+ ${row('Público · sugerencias','Si te deja: edad 25 a 60. <b>No agregues intereses</b>: el público va abierto.')}
+ ${row('Ubicaciones','Elige <b>«Ubicaciones manuales»</b> → en Plataformas <b>desmarca Audience Network</b>. Deja Facebook, Instagram y Messenger.')}
+ ${row('Al terminar','Botón <b>Siguiente</b>')}
+ </tbody></table></div>
+ <div class="card gstep"><h4><span class="num">4</span>Primer anuncio (el 01)</h4><table class="gt"><tbody>
+ ${row('Nombre del anuncio',`<span class="val">${ADS6[0].name}</span>${cb('n1')}`)}
+ ${row('Identidad','Página: <b>Tecnomovilgt</b> · Cuenta de Instagram: <b>@tecnomovilguatemala</b>')}
+ ${row('Configuración del anuncio','<b>Crear anuncio</b> (no «Usar publicación existente»)')}
+ ${row('Formato','<b>Imagen o video únicos</b>')}
+ ${row('Contenido','<b>Agregar contenido multimedia</b> → Agregar video → Subir → elige:<div class="path">'+ADS6[0].path+'</div>')}
+ ${row('Texto principal','El del anuncio 01 '+cb('t1','Copiar texto'))}
+ ${row('Título',`<span class="val">${ADS6[0].title}</span>${cb('h1')}`)}
+ ${row('Plantilla de mensaje','«Crear nueva». Si pide <b>saludo</b>: <span class="val">'+esc(GREET)+'</span>'+cb('greet')+'<br>En <b>mensaje prellenado</b> (lo que el cliente envía): <span class="val">'+esc(ADS6[0].pre)+'</span>'+cb('p1'))}
+ ${row('Mejoras de contenido Advantage+','Desactiva las que cambian tu pieza: <b>música, animación, texto generado, fondos</b>. Tus reels ya tienen música y voz.')}
+ ${row('Vista previa','Revisa a la derecha cómo se ve en Feed, Reels e Historias.')}
+ </tbody></table></div>
+ <div class="card gstep"><h4><span class="num">5</span>Anuncios 02 al 06</h4><ol class="ol"><li>En el panel de la izquierda, sobre el anuncio 01, toca los tres puntos <b>…</b> → <b>Duplicar</b> → «Conjunto de anuncios original» → Duplicar.</li><li>En la copia cambia 5 cosas con la tarjeta del anuncio que toca (sección «Tus 6 anuncios»): <b>nombre, video o imagen, texto principal, título y mensaje prellenado</b>. Para los anuncios 04, 05 y 06 es «Agregar imagen» en vez de video.</li><li>Repite hasta tener 6 anuncios dentro del mismo conjunto.</li></ol></div>
+ <div class="card gstep"><h4><span class="num">6</span>Publicar y comprobar</h4><ol class="ol"><li>Botón verde <b>Publicar</b> (abajo a la derecha).</li><li>Verás «En revisión»: es normal. Meta tarda de minutos a 24 horas. Como empieza el 1 de diciembre, hay tiempo.</li><li>Revisa en la tabla que se vean <b>1 campaña, 1 conjunto y 6 anuncios</b>, todos con el interruptor azul.</li><li>Si Meta muestra un error en rojo, lee el mensaje; casi siempre es un campo vacío. Si no sabes qué es, mándame una captura.</li></ol></div>`}
+function adCardHTML(a){return`<div class="adc" style="border-left-color:${a.c}"><h4>Anuncio ${a.name}</h4><p class="sub" style="margin:2px 0 0">${a.kind==='video'?'Video':'Imagen'} · ${a.src.k==='R'?'Reel '+a.src.id:'Publicación '+pad(a.src.id)}</p>
+ <div class="row"><small>Archivo</small><div class="path" style="margin:0">${a.path}</div></div>
+ <div class="row"><small>Nombre del anuncio</small><span class="val">${a.name}</span>${cb('n'+a.n)}</div>
+ <div class="row"><small>Texto principal</small><div class="txt">${esc(a.text)}</div>${cb('t'+a.n,'Copiar texto')}</div>
+ <div class="row"><small>Título</small><span class="val">${a.title}</span>${cb('h'+a.n)}</div>
+ <div class="row"><small>Mensaje prellenado</small><span class="val">${esc(a.pre)}</span>${cb('p'+a.n)}</div></div>`}
+const REVIEW_HOW=`<ol class="ol"><li>Administrador de anuncios → pestaña <b>Anuncios</b>. Arriba a la derecha, fechas: <b>desde el 1 de diciembre</b> hasta hoy.</li><li>Mira de cada anuncio: <b>Resultados</b> (conversaciones), <b>Costo por resultado</b> e <b>Importe gastado</b>.</li><li>Anota esos 3 números de cada anuncio en tu Excel, con la fecha.</li></ol>
+<table style="margin-top:8px"><thead><tr><th>Costo por conversación</th><th>Qué significa (referencia para empezar)</th></tr></thead><tbody><tr><td class="ok">Menos de Q15</td><td>Muy bien</td></tr><tr><td>Q15 a Q35</td><td>Normal</td></tr><tr><td class="bad">Más de Q35</td><td>Caro para este anuncio</td></tr></tbody></table><p class="sub" style="margin-top:6px">Es una referencia inicial; con tus propios datos sabrás qué es bueno para Tecno Móvil. Más importante que el costo: <b>cuántas de esas conversaciones pidieron cotización</b>.</p>`;
+const REVIEW_RULE=`<ol class="ol"><li><b>Apaga</b> (interruptor azul → gris) un anuncio si: gastó más de <b>Q70</b> y no trajo <b>ninguna</b> conversación, o si su costo por conversación es <b>más del doble</b> que el del mejor anuncio.</li><li>Deja siempre <b>al menos 3 anuncios encendidos</b>.</li><li><b>No cambies</b> el presupuesto, el público ni las fechas.</li><li>Es normal que Meta le dé casi todo el dinero a 1 o 2 anuncios. No lo corrijas: así funciona.</li><li>Antes de apagar, anota en el Excel los números de ese anuncio.</li></ol>`;
+const ADTASK={
+'2026-11-26':{b:'PREPARAR 1',t:PREP[0].t,min:PREP[0].min,h:()=>PREP[0].h},
+'2026-11-27':{b:'PREPARAR 2',t:PREP[1].t,min:PREP[1].min,h:()=>PREP[1].h},
+'2026-11-28':{b:'PREPARAR 3',t:PREP[2].t,min:PREP[2].min,h:()=>PREP[2].h},
+'2026-11-30':{b:'▶ CREAR CAMPAÑA',hot:1,t:'Crea la campaña (empieza sola el 1 de diciembre)',min:'30–45 min',h:()=>`<p>Hoy creas toda la campaña. Queda programada y arranca sola el martes 1 a las 00:00. Sigue estos pasos con calma:</p>`+guideHTML()+`<h3>Tus 6 anuncios</h3><div class="g2" style="gap:10px">${ADS6.map(adCardHTML).join('')}</div>`},
+'2026-12-01':{b:'VERIFICAR',t:'Revisa que la campaña esté «Activa»',min:'5 min',h:()=>`<ol class="ol"><li>Administrador de anuncios → la campaña debe decir <b>«Activa»</b> o <b>«Aprendizaje»</b>.</li><li>Si dice «En revisión», espera. Si algún anuncio dice «Rechazado», ve a «Si algo sale mal» en la pestaña 03; los demás siguen corriendo.</li><li>Desde hoy, contesta cada WhatsApp en menos de 1 hora hábil y anótalo en el Excel.</li><li><b>No cambies nada hasta el 8 de diciembre.</b> Meta está aprendiendo.</li></ol>`},
+'2026-12-05':{b:'VISTAZO',t:'Primer vistazo a los resultados (sin cambiar nada)',min:'10 min',h:()=>REVIEW_HOW+'<p style="margin-top:8px"><b>Hoy solo anotas. No apagues nada todavía.</b></p>'},
+'2026-12-08':{b:'REVISIÓN 1',t:'Apaga los anuncios que no funcionan',min:'15 min',h:()=>REVIEW_HOW+'<h3>Qué hacer</h3>'+REVIEW_RULE},
+'2026-12-15':{b:'REVISIÓN 2',t:'Segunda revisión de la campaña',min:'15 min',h:()=>REVIEW_HOW+'<h3>Qué hacer</h3>'+REVIEW_RULE+'<p style="margin-top:8px">Además, revisa en tu Excel <b>de qué anuncio vinieron las cotizaciones reales</b> (por el mensaje prellenado). Ese dato vale más que el costo.</p>'},
+'2026-12-21':{b:'FIN CAMPAÑA',t:'Último día de la campaña',min:'2 min',h:()=>`<p>La campaña se apaga sola hoy a las 23:59. No tienes que hacer nada. Si quieres, confirma mañana que diga «Finalizada».</p>`},
+'2026-12-22':{b:'RESULTADOS',t:'Anota los resultados finales',min:'20 min',h:()=>`<ol class="ol"><li>Administrador de anuncios → fechas del 1 al 21 de diciembre.</li><li>Anota: <b>gasto total, conversaciones, costo promedio por conversación</b> y el mejor anuncio.</li><li>De tu Excel: <b>cotizaciones enviadas y ventas cerradas</b> que vinieron de la campaña.</li><li>Con eso llena la pestaña 04 (Impacto) para el reporte a la dirección y decidimos qué hacer en enero.</li></ol>`}
+};
+
+/* ---------- CALENDARIO (fecha, tipo, id, historia, hora) ---------- */
 const DAYS=[
 {d:"2026-11-24",k:"P",id:1,st:1,h:"Hoy, entre 18:00 y 19:00 (o en cuanto puedas)"},
 {d:"2026-11-25",k:"P",id:2,st:2,h:"18:00–20:00"},
@@ -443,27 +598,27 @@ const DAYS=[
 {d:"2026-11-28",k:"P",id:4,st:5,h:"10:00–12:00 (sábado)"},
 {d:"2026-11-29",k:"X"},
 {d:"2026-11-30",k:"R",id:2,st:6,h:"19:00"},
-{d:"2026-12-01",k:"P",id:5,st:7,h:"12:00–13:00",act:["A","B"]},
+{d:"2026-12-01",k:"P",id:5,st:7,h:"12:00–13:00"},
 {d:"2026-12-02",k:"P",id:6,st:8,h:"18:00–20:00"},
 {d:"2026-12-03",k:"P",id:7,st:9,h:"12:00–13:00"},
 {d:"2026-12-04",k:"P",id:8,st:10,h:"12:00–13:00"},
 {d:"2026-12-05",k:"R",id:3,h:"11:00 (sábado)"},
 {d:"2026-12-06",k:"X"},
-{d:"2026-12-07",k:"P",id:9,h:"18:00–20:00",end:["A","B"],cot:1},
-{d:"2026-12-08",k:"P",id:10,h:"18:00–20:00",act:["C"]},
+{d:"2026-12-07",k:"P",id:9,h:"18:00–20:00",cot:1},
+{d:"2026-12-08",k:"P",id:10,h:"18:00–20:00"},
 {d:"2026-12-09",k:"P",id:11,h:"18:00–20:00"},
 {d:"2026-12-10",k:"P",id:12,h:"12:00–13:00"},
 {d:"2026-12-11",k:"P",id:13,h:"12:00–13:00"},
 {d:"2026-12-12",k:"P",id:14,h:"10:00–12:00 (sábado)"},
 {d:"2026-12-13",k:"X"},
-{d:"2026-12-14",k:"P",id:15,h:"12:00–13:00",end:["C"],cot:1},
-{d:"2026-12-15",k:"P",id:16,h:"18:00–20:00",act:["D","E"]},
+{d:"2026-12-14",k:"P",id:15,h:"12:00–13:00",cot:1},
+{d:"2026-12-15",k:"P",id:16,h:"18:00–20:00"},
 {d:"2026-12-16",k:"P",id:17,h:"18:00–20:00"},
 {d:"2026-12-17",k:"P",id:18,h:"12:00–13:00"},
 {d:"2026-12-18",k:"P",id:19,h:"18:00–20:00"},
 {d:"2026-12-19",k:"P",id:20,h:"10:00–12:00 (sábado)"},
 {d:"2026-12-20",k:"X"},
-{d:"2026-12-21",k:"P",id:21,h:"12:00–13:00",end:["D","E"],cot:1},
+{d:"2026-12-21",k:"P",id:21,h:"12:00–13:00",cot:1},
 {d:"2026-12-22",k:"P",id:22,h:"12:00–13:00"},
 {d:"2026-12-23",k:"P",id:23,h:"18:00–20:00"},
 {d:"2026-12-24",k:"P",id:24,h:"09:00–11:00"},
@@ -477,50 +632,26 @@ const DAYS=[
 ];
 
 /* ---------- utilidades ---------- */
-const $=id=>document.getElementById(id),dt=s=>new Date(s+'T12:00:00'),pad=n=>String(n).padStart(2,'0');
+const $=id=>document.getElementById(id),dt=s=>new Date(s+'T12:00:00');
 const MN=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],DL=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'],DS=['dom','lun','mar','mié','jue','vie','sáb'];
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fdate=s=>{const x=dt(s);return DL[x.getDay()]+' '+x.getDate()+' de '+MN[x.getMonth()]};
 const usd=q=>Math.round(q/7.7);
 const t0=new Date(),TODAY=t0.getFullYear()+'-'+pad(t0.getMonth()+1)+'-'+pad(t0.getDate());
 function info(d){
  if(d.k==='X')return{type:'Descanso',color:'#9aa6bd',label:d.nav?'NAVIDAD':'DESCANSO',title:d.nav?'Feliz Navidad · no se publica':'Domingo de descanso'};
- if(d.k==='R'){const r=REEL[d.id];return{type:'Reel',color:'#e4482b',label:'REEL '+d.id,title:r.t,o:r,star:r.ad}}
- const p=PUB[d.id];const ty=p.n>1?'Carrusel':'Foto';return{type:ty,color:ty==='Carrusel'?'#0b2a5c':'#2f7fd1',label:'PUBLICACIÓN '+pad(d.id),title:p.t,o:p,star:p.ad};
+ if(d.k==='R'){const r=REEL[d.id];return{type:'Reel',color:'#e4482b',label:'REEL '+d.id,title:r.t,o:r,camp:inCamp('R',d.id)}}
+ const p=PUB[d.id];const ty=p.n>1?'Carrusel':'Foto';return{type:ty,color:ty==='Carrusel'?'#0b2a5c':'#2f7fd1',label:'PUBLICACIÓN '+pad(d.id),title:p.t,o:p,camp:inCamp('P',d.id)};
 }
-function storyText(d,i){
+function storyText(d){
  if(d.k==='X')return d.nav?'Hoy no publiques. Solo contesta mensajes.':'Opcional: comparte en historia el reel o la mejor publicación de la semana.';
  if(d.st){const s=STO[d.st];return`Historia ${pad(d.st)} · ${s[0]}`}
  return 'Compartir en historia';
 }
-function copyTxt(txt,btn){const ok=()=>{btn.textContent='Copiado ✓';setTimeout(()=>btn.textContent=btn.dataset.l,1800)};const fb=()=>{const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.append(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove();ok()};try{if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(ok,fb)}else fb()}catch(e){fb()}}
-
-/* ---------- ficha de publicidad ---------- */
-function ficha(key,open){const a=ADS[key],tot=a.daily*a.days;
- let src='';if(a.src&&a.src[0]==='r'){const r=REEL[+a.src.slice(1)];src=`Documentos › Reels con Claude › Reels › ${r.dir}`}else if(a.src){src=`Descargas › Tecnomovil › Publicaciones › Publicación 15 - ${PUB[15].t}`}
- const aud=a.aud?`<tr><td>Público</td><td>«Crear nuevo» · nombre: <b>${a.aud.name}</b></td></tr><tr><td>Ubicación</td><td>Guatemala (todo el país)</td></tr><tr><td>Edad</td><td>${a.aud.age} años</td></tr><tr><td>Sexo</td><td>Todos</td></tr><tr><td>Intereses (escribe cada palabra y elige la opción más parecida)</td><td>${a.aud.int}</td></tr><tr><td>Comportamiento (si aparece)</td><td>Administradores de páginas de negocios</td></tr>`
- :`<tr><td>Público</td><td>El mismo que usó el ganador: <b>«Gasolineras GT»</b> si ganó A, o <b>«Canchas y ligas GT»</b> si ganó B (aparece en «Públicos guardados»).</td></tr>`;
- const faq=a.faq?`<br><small>Preguntas rápidas: ${a.faq.map(esc).join(' · ')}</small>`:'';
- return`<details class="ficha" id="ficha-${key}"${open?' open':''}><summary><h4><span class="dot" style="background:${a.c}"></span>★ ${a.n} <span class="pill">${a.piece}</span></h4><p class="why" style="margin-bottom:0"><b>${a.when} · Q${a.daily} diarios · total Q${tot}</b>${open?'':' — toca para ver la ficha'}</p></summary><p class="why" style="margin-top:10px">${a.why}</p>
- <table><tbody>
- <tr><td>Qué promocionas</td><td>${a.src?a.piece+(src?`<div class="path">${src}</div>`:''):'Entra a Meta Business Suite → Contenido, abre el reel ganador (Reel 1 o Reel 2) y toca «Promocionar» otra vez.'}</td></tr>
- <tr><td>Cuándo</td><td><b>${a.when}</b> (actívalo el ${fdate(a.from)})</td></tr>
- <tr><td>Dónde</td><td>Meta Business Suite (en la compu) → Contenido → la pieza → <b>Promocionar</b></td></tr>
- <tr><td>Objetivo</td><td><b>Más mensajes</b></td></tr>
- <tr><td>Dónde llegan los mensajes</td><td>WhatsApp (3231 7218) si ya está conectado a la página. Si no: Messenger + Instagram Direct.</td></tr>
- <tr><td>Mensaje de bienvenida</td><td>${esc(WELCOME)}${faq}</td></tr>
- ${aud}
- <tr><td>Ubicaciones del anuncio</td><td>Automáticas (Facebook e Instagram)</td></tr>
- <tr><td>Presupuesto diario</td><td><b>Q${a.daily}</b></td></tr>
- <tr><td>Duración</td><td><b>${a.days} días</b> (termina solo el ${fdate(a.to)})</td></tr>
- <tr><td>Total</td><td><b>Q${tot}</b> ≈ US$${usd(tot)}</td></tr>
- <tr><td>Pago</td><td>La tarjeta de la cuenta de anuncios Tecnomovilgt (ya está registrada)</td></tr>
- <tr><td>Último paso</td><td>«Promocionar ahora». Meta lo revisa (de minutos a unas horas).</td></tr>
- </tbody></table>
- <p class="sub" style="margin:10px 0 0">Si Meta te muestra «Público Advantage+» en vez de «Crear nuevo», déjalo activado y pon estos datos como sugerencias. Es normal.</p></details>`}
+function copyTxt(txt,btn){const l=btn.dataset.l||btn.textContent;const ok=()=>{btn.textContent='Copiado ✓';setTimeout(()=>btn.textContent=l,1800)};const fb=()=>{const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.append(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove();ok()};try{if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(ok,fb)}else fb()}catch(e){fb()}}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-copy]');if(b&&COPY[b.dataset.copy]!==undefined){e.preventDefault();copyTxt(COPY[b.dataset.copy],b)}});
 
 /* ---------- vistas ---------- */
-function sv(v){document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));scrollTo({top:0})}
+function sv(v,anchor){document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));if(anchor&&$(anchor)){$(anchor).scrollIntoView()}else scrollTo({top:0})}
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>sv(b.dataset.v));
 
 let cur=0,fl='Todos',qs='',dn=new Set();try{dn=new Set(JSON.parse(localStorage.getItem('tm3')||'[]'))}catch(e){}
@@ -528,10 +659,10 @@ const FILT=['Todos','Publicaciones','Reels','★ Publicidad','Pendientes'];
 $('fl').innerHTML=FILT.map(f=>`<button class="f${f==='Todos'?' on':''}" data-f="${f}">${f}</button>`).join('');
 document.querySelectorAll('.f').forEach(b=>b.onclick=()=>{document.querySelectorAll('.f').forEach(x=>x.classList.remove('on'));b.classList.add('on');fl=b.dataset.f;draw()});
 $('q').oninput=e=>{qs=e.target.value.toLowerCase();draw()};
-function match(d){const i=info(d);
+function match(d){const i=info(d),at=ADTASK[d.d];
  if(fl==='Publicaciones'&&d.k!=='P')return false;if(fl==='Reels'&&d.k!=='R')return false;
- if(fl==='★ Publicidad'&&!(i.star||d.act||d.end))return false;if(fl==='Pendientes'&&(d.k==='X'||dn.has(d.d)))return false;
- if(qs){const s=(i.title+' '+i.label+' '+storyText(d,i)+' '+(i.o?i.o.cap:'')).toLowerCase();if(!s.includes(qs))return false}
+ if(fl==='★ Publicidad'&&!(i.camp||at))return false;if(fl==='Pendientes'&&(d.k==='X'||dn.has(d.d)))return false;
+ if(qs){const s=(i.title+' '+i.label+' '+storyText(d)+' '+(i.o?i.o.cap:'')+' '+(at?at.t:'')).toLowerCase();if(!s.includes(qs))return false}
  return true}
 function draw(){const h=$('cal');h.innerHTML='';
  const weeks={};DAYS.forEach((d,idx)=>{const x=dt(d.d),m=new Date(x);m.setDate(x.getDate()-((x.getDay()+6)%7));const k=m.getFullYear()+'-'+pad(m.getMonth()+1)+'-'+pad(m.getDate());(weeks[k]??=[]).push(idx)});
@@ -541,40 +672,39 @@ function draw(){const h=$('cal');h.innerHTML='';
   for(let c=0;c<7;c++){const dd=new Date(m);dd.setDate(m.getDate()+c);const ds=dd.getFullYear()+'-'+pad(dd.getMonth()+1)+'-'+pad(dd.getDate());const idx=list.find(i=>DAYS[i].d===ds);
    const b=document.createElement('button');
    if(idx===undefined){b.className='day blank';b.tabIndex=-1;gr.append(b);continue}
-   const d=DAYS[idx],i=info(d),x=dt(d.d);
+   const d=DAYS[idx],i=info(d),x=dt(d.d),at=ADTASK[d.d];
    b.className='day'+(d.k==='X'?' rest':'')+(dn.has(d.d)?' done':'')+(d.d===TODAY?' today':'')+(match(d)?'':' dim');
    b.style.setProperty('--c',i.color);
-   const bd=[];if(i.star)bd.push('<span class="b-star">★ PUBLICIDAD</span>');if(d.act)bd.push(`<span class="b-act">▶ ACTIVAR ${d.act.join(' + ')}</span>`);if(d.end)bd.push(`<span class="b-end">FIN ${d.end.join(' + ')}</span>`);if(d.d===TODAY)bd.push('<span class="b-act">HOY</span>');
-   b.innerHTML=`<div class="d">${DS[x.getDay()]}</div><div class="n">${x.getDate()}</div><div class="k">${i.label}</div><div class="t">${esc(i.title)}</div>${d.k!=='X'?`<div class="s">${storyText(d,i)}</div>`:''}<div class="bdg">${bd.join('')}</div>`;
+   const bd=[];if(i.camp)bd.push('<span class="b-star">★ EN CAMPAÑA</span>');if(at)bd.push(`<span class="${at.hot?'b-act':'b-task'}">${at.b}</span>`);if(d.d===TODAY)bd.push('<span class="b-act">HOY</span>');
+   b.innerHTML=`<div class="d">${DS[x.getDay()]}</div><div class="n">${x.getDate()}</div><div class="k">${i.label}</div><div class="t">${esc(i.title)}</div>${d.k!=='X'?`<div class="s">${storyText(d)}</div>`:''}<div class="bdg">${bd.join('')}</div>`;
    b.onclick=()=>op(idx);gr.append(b)}
   h.append(gr)});
  const tot=DAYS.filter(d=>d.k!=='X').length,dc=DAYS.filter(d=>d.k!=='X'&&dn.has(d.d)).length;
  $('pt').textContent=dc+' de '+tot+' días completados';$('pb').style.width=dc/tot*100+'%'}
 
-function op(idx){cur=idx;const d=DAYS[idx],i=info(d);
+function op(idx){cur=idx;const d=DAYS[idx],i=info(d),at=ADTASK[d.d];
  $('md').textContent=fdate(d.d)+(d.k!=='X'?' · '+i.type:'');$('mt').textContent=d.k==='X'?i.title:i.label.charAt(0)+i.label.slice(1).toLowerCase()+' · '+i.title;
  let H='';
- if(d.k==='X'){H=`<p>${storyText(d,i)}</p><p class="sub" style="margin-top:8px">${d.nav?'Mañana sábado 26 sale el Reel 4.':'Si alguien escribe, contesta igual: los mensajes no descansan.'}</p>`}
+ if(at){H+=`<div class="task${at.hot?' hot':''}" style="margin-top:0"><div class="eyebrow">★ Publicidad de hoy${at.min?' · '+at.min:''}</div><h4 style="font-size:17px;margin:4px 0 6px">${at.t}</h4>${at.h()}</div>`}
+ if(d.k==='X'){H+=`<p style="margin-top:${at?14:0}px">${storyText(d)}</p><p class="sub" style="margin-top:8px">${d.nav?'Mañana sábado 26 sale el Reel 4.':'Si alguien escribe, contesta igual: los mensajes no descansan.'}</p>`}
  else{
-  if(i.star){const a=ADS[i.star];H+=`<div class="note gold" style="margin-top:0"><b>★ Esta pieza lleva publicidad (${a.n}).</b> Publícala hoy normal. La publicidad se activa el ${fdate(a.from)}; ese día el calendario te lo recuerda con la ficha completa.</div>`}
+  if(i.camp){H+=`<div class="note gold"><b>★ Esta pieza también va en la campaña (anuncio ${i.camp.name}).</b> Publícala hoy normal en el feed. <b>No uses el botón «Promocionar»</b>: la publicidad ya la hace la campaña.</div>`}
   H+='<h3>Qué publicar</h3>';
   if(d.k==='R'){const r=i.o;H+=`<p>Reel de ${r.dur}, en Facebook e Instagram.</p><div class="path">Documentos › Reels con Claude › Reels › ${r.dir} › <b>${r.file}</b></div><p class="sub" style="margin-top:6px">Portada: <b>portada.png</b> de la misma carpeta.</p>`}
   else{const p=i.o;H+=`<p>${i.type==='Carrusel'?`Carrusel de <b>${p.n} imágenes</b>, súbelas en orden (Imagen 1 → Imagen ${p.n})`:'Una imagen'} en Facebook e Instagram.</p><div class="path">Descargas › Tecnomovil › Publicaciones › <b>Publicación ${pad(d.id)} - ${p.t}</b></div>`}
   H+=`<h3>Hora</h3><p>${d.h}</p>`;
-  H+=`<h3>Texto para copiar y pegar</h3><div class="copy">${esc(i.o.cap)}</div><button class="btn p" id="cc" data-l="Copiar texto" style="margin-top:8px">Copiar texto</button>`;
+  COPY.cap=i.o.cap;
+  H+=`<h3>Texto para copiar y pegar</h3><div class="copy">${esc(i.o.cap)}</div><button class="btn p" data-copy="cap" data-l="Copiar texto" style="margin-top:8px">Copiar texto</button>`;
   if(i.o.rev)H+=`<h3>Revisa antes</h3><p>${esc(i.o.rev)}</p>`;
   H+='<h3>Historia del día</h3>';
   if(d.st){const s=STO[d.st];H+=`<p><b>Historia ${pad(d.st)} · ${s[0]}</b> (${s[1]} imágenes). Súbelas en orden, de la 01 a la ${pad(s[1])}.</p><div class="path">Descargas › Tecnomovil › Historias › ${s[2]}</div><p style="margin-top:8px">Luego, en la app de Instagram, guárdalas como <b>destacada «${s[0]}»</b> con la portada <b>«00 - Portada.png»</b>.${d.st===10?' ¡Con esta quedan las 10 destacadas!':''}</p>`}
   else{H+=`<p>Comparte ${d.k==='R'?'el reel':'la publicación'} en tu historia${i.o.hl?` y agrégala a la destacada <b>«${i.o.hl}»</b>`:''}.</p>`;
    if(d.cot)H+=`<p style="margin-top:8px">Además, como es lunes: sube otra vez <b>Historias › 01 - Cotiza › 04 - Historia.png</b> y agrégala a la destacada «Cotiza». Así Cotiza queda de primera en tu perfil.</p>`}
-  if(d.act){H+=`<h3>▶ Hoy activas la publicidad</h3><p>Activa ${d.act.map(k=>ADS[k].n).join(' y ')}. Aquí está todo lo que te pide Meta:</p>`+d.act.map(k=>ficha(k,true)).join('')}
-  if(d.end){H+=`<h3>Hoy termina: ${d.end.map(k=>ADS[k].n).join(' y ')}</h3><p>${d.end.includes('A')?'Antes de dormir, abre el Administrador de anuncios y anota en tu Excel, de A y de B: conversaciones iniciadas y costo por conversación. <b>El más barato es el ganador</b> y lo vuelves a promocionar el 15 de diciembre (Anuncio E).':d.end.includes('C')?'Anota en tu Excel las conversaciones iniciadas y el costo por conversación del anuncio C.':'Anota los resultados de D y E. Del 22 al 31 solo orgánico.'}</p>`}
   if(d.fin)H+=`<h3>Cierre del plan</h3><p>Revisa los resultados del mes (pestaña 04) y anótalos para el reporte a la dirección.</p>`;
-  H+=`<h3>Lista rápida</h3><div class="chk">${['Publicado en Facebook e Instagram','Historia del día subida','Comentarios respondidos en la primera hora','Mensajes anotados en el Excel'].map(c=>`<label><input type="checkbox"><span>${c}</span></label>`).join('')}</div>`;
+  H+=`<h3>Lista rápida</h3><div class="chk">${['Publicado en Facebook e Instagram','Historia del día subida','Comentarios respondidos en la primera hora','Mensajes anotados en el Excel'].concat(at?['Tarea de publicidad hecha']:[]).map(c=>`<label><input type="checkbox"><span>${c}</span></label>`).join('')}</div>`;
  }
  $('mbd').innerHTML=H;
- if($('cc'))$('cc').onclick=e=>copyTxt(i.o.cap,e.currentTarget);
- $('dn').style.visibility=d.k==='X'?'hidden':'visible';$('dn').textContent=dn.has(d.d)?'Quitar marca':'Marcar terminado ✓';
+ $('dn').style.visibility=d.k==='X'&&!at?'hidden':'visible';$('dn').textContent=dn.has(d.d)?'Quitar marca':'Marcar terminado ✓';
  $('m').classList.add('open');$('m').querySelector('.mb').scrollTop=0}
 $('x').onclick=()=>$('m').classList.remove('open');$('m').onclick=e=>{if(e.target.id==='m')$('m').classList.remove('open')};
 document.addEventListener('keydown',e=>{if(!$('m').classList.contains('open'))return;if(e.key==='Escape')$('m').classList.remove('open');if(e.key==='ArrowRight')$('nx').click();if(e.key==='ArrowLeft')$('pv').click()});
@@ -584,10 +714,10 @@ function todayIdx(){let i=DAYS.findIndex(d=>d.d===TODAY);if(i<0)i=TODAY<DAYS[0].
 $('gohoy').onclick=()=>op(todayIdx());
 
 /* ---------- tarjeta de hoy (Resumen) ---------- */
-function todayCard(){const idx=todayIdx(),d=DAYS[idx],i=info(d),isT=d.d===TODAY;
+function todayCard(){const idx=todayIdx(),d=DAYS[idx],i=info(d),isT=d.d===TODAY,at=ADTASK[d.d];
  const pre=isT?'Hoy · '+fdate(d.d):(TODAY<DAYS[0].d?'Primer día · ':'Último día · ')+fdate(d.d);
- let txt=d.k==='X'?i.title:`${i.label.charAt(0)+i.label.slice(1).toLowerCase()} · ${i.title} — ${d.h}`;
- let extra=d.k==='X'?'':storyText(d,i)+(d.act?' · ▶ Activar '+d.act.map(k=>ADS[k].n).join(' y '):'')+(i.star?' · ★ lleva publicidad':'')+(dn.has(d.d)?' · ✓ terminado':'');
+ const txt=d.k==='X'?i.title:`${i.label.charAt(0)+i.label.slice(1).toLowerCase()} · ${i.title} — ${d.h}`;
+ const extra=(d.k==='X'?'':storyText(d))+(at?' · ★ Publicidad: '+at.t:'')+(i.camp?' · ★ va en la campaña':'')+(dn.has(d.d)?' · ✓ terminado':'');
  $('hoy').innerHTML=`<div><div class="eyebrow">${pre}</div><h3 style="font-size:19px;margin-top:4px">${esc(txt)}</h3><p>${extra}</p></div><button class="btn p" id="openhoy">Abrir el día</button>`;
  $('openhoy').onclick=()=>{sv('v2');op(idx)}}
 
@@ -597,20 +727,21 @@ function todayCard(){const idx=todayIdx(),d=DAYS[idx],i=info(d),isT=d.d===TODAY;
  const w={};DAYS.forEach(d=>{if(d.k==='X')return;const x=dt(d.d),m=new Date(x);m.setDate(x.getDate()-((x.getDay()+6)%7));const k=pad(m.getDate())+'/'+pad(m.getMonth()+1);w[k]=(w[k]||0)+1});
  s='';Object.entries(w).forEach(([k,n],j)=>{const x=12+j*50;s+=`<rect x="${x}" y="${108-n*14}" width="32" height="${n*14}" rx="4" fill="#0b2a5c"/><text x="${x+16}" y="${102-n*14}" text-anchor="middle" style="fill:var(--ink);font-weight:700">${n}</text><text x="${x+16}" y="124" text-anchor="middle" style="font-size:9px">${k}</text>`});$('wk').innerHTML=s})();
 
-/* ---------- gráficas de publicidad ---------- */
-(function(){const keys=Object.keys(ADS),tot=keys.reduce((a,k)=>a+ADS[k].daily*ADS[k].days,0),C=2*Math.PI*55;let off=0,s='<g transform="translate(85 90) rotate(-90)">';
- keys.forEach(k=>{const v=ADS[k].daily*ADS[k].days,l=v/tot*C;s+=`<circle r="55" fill="none" stroke="${ADS[k].c}" stroke-width="30" stroke-dasharray="${l.toFixed(1)} ${C.toFixed(1)}" stroke-dashoffset="${(-off).toFixed(1)}"/>`;off+=l});
- s+=`</g><text x="85" y="88" text-anchor="middle" style="font-size:18px;font-weight:800;fill:var(--ink)">Q${tot}</text><text x="85" y="104" text-anchor="middle">≈ US$${usd(tot)}</text><g style="font-size:11.5px">`;
- keys.forEach((k,j)=>{const a=ADS[k],v=a.daily*a.days;s+=`<rect x="170" y="${22+j*28}" width="12" height="12" rx="3" fill="${a.c}"/><text x="188" y="${32+j*28}"><tspan style="font-weight:700;fill:var(--ink)">Q${v}</tspan> ${a.n.replace('Anuncio ','')} · ${a.src?a.piece.split(' · ')[0]:'ganador A/B'}</text>`});s+='</g>';$('donut').innerHTML=s;
- const D0=dt('2026-12-01'),X=d=>70+((dt(d)-D0)/864e5)*16;let g='';
- [1,8,15,21].forEach(n=>{const d='2026-12-'+pad(n);g+=`<line x1="${X(d)}" x2="${X(d)}" y1="10" y2="170" stroke="var(--line)"/><text x="${X(d)}" y="186" text-anchor="middle">${n} dic</text>`});
- keys.forEach((k,j)=>{const a=ADS[k],y=18+j*30,x1=X(a.from),x2=X(a.to)+16;g+=`<text x="0" y="${y+13}" style="font-weight:700;fill:var(--ink)">${a.n.replace(' · Reserva','')}</text><rect x="${x1}" y="${y}" width="${x2-x1}" height="18" rx="5" fill="${a.c}"/><text x="${x1+6}" y="${y+13}" style="fill:${k==='E'?'#2b2000':'#fff'};font-weight:700">Q${a.daily}/día</text>`});
- g+=`<text x="70" y="208" style="font-size:10.5px">Del 22 al 31 de diciembre: solo orgánico (sin anuncios)</text>`;$('gantt').innerHTML=g;
- $('fichas').innerHTML=keys.map(k=>ficha(k,false)).join('');
- $('wm').textContent=WELCOME;$('cwm').onclick=e=>copyTxt(WELCOME,e.currentTarget)})();
+/* ---------- pestaña de publicidad ---------- */
+(function(){
+ $('adtl').querySelector('tbody').innerHTML=Object.entries(ADTASK).map(([d,a])=>`<tr><td style="white-space:nowrap"><b>${fdate(d)}</b></td><td>${a.hot?'<b class="bad">'+a.t+'</b>':a.t}</td><td>${a.min||PREP.find(p=>p.d===d)?.min||''}</td></tr>`).join('');
+ $('prep').innerHTML=PREP.map((p,j)=>`<div class="card gstep"><h4><span class="num">${j+1}</span>${p.t} <span class="pill">${fdate(p.d)} · ${p.min}</span></h4>${p.h}</div>`).join('');
+ $('guia').innerHTML=guideHTML();
+ $('ads6').innerHTML=ADS6.map(adCardHTML).join('');
+ $('review').innerHTML=`<div class="g2"><div class="card"><b>Cómo mirar los números (5, 8 y 15 de dic)</b>${REVIEW_HOW}</div><div class="card"><b>Qué hacer el 8 y el 15 de diciembre</b>${REVIEW_RULE}</div></div>`;
+ const wk=[['1–7 dic',245],['8–14 dic',245],['15–21 dic',245],['Margen',35]],mx=245;let s='';
+ wk.forEach(([l,v],j)=>{const x=30+j*95,h=v/mx*120;s+=`<rect x="${x}" y="${150-h}" width="60" height="${h}" rx="6" fill="${j<3?'#0b2a5c':'#c9d4ea'}"/><text x="${x+30}" y="${143-h}" text-anchor="middle" style="fill:var(--ink);font-weight:700">Q${v}</text><text x="${x+30}" y="170" text-anchor="middle">${l}</text>`});
+ s+=`<text x="0" y="186" style="font-size:10.5px">Q35 diarios × 21 días = Q735 · del 22 al 31 de diciembre: sin anuncios</text>`;$('spend').innerHTML=s;
+})();
 
 /* ---------- tabla de destacadas ---------- */
 $('hlt').querySelector('tbody').innerHTML=Object.entries(STO).map(([n,s])=>{const d=DAYS.find(x=>x.st==+n);return`<tr><td>${pad(n)}</td><td><b>${s[0]}</b></td><td>Historias › ${s[2]}</td><td>${s[1]} + portada</td><td>${fdate(d.d)}</td></tr>`}).join('');
+
 
 /* ---------- calculadora ---------- */
 const fmt=n=>Math.round(n).toLocaleString('es-GT');
